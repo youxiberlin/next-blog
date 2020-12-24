@@ -1,4 +1,5 @@
 import Layout from "../components/layouts/main"
+import TopPosts from "../components/layouts/top-posts"
 import { getAllPosts } from "../lib/api"
 
 const HomePage = ({ allPosts }) => {
@@ -6,13 +7,14 @@ const HomePage = ({ allPosts }) => {
   console.log('main', main)
   return (
     <Layout>
-      title: {main.title}
-      date: {main.date}
+      <TopPosts
+        title={main.title}
+        date={main.date}
+      />
     </Layout>
   )
 }
 export default HomePage;
-
 
 export async function getStaticProps() {
   const allPosts = getAllPosts([

@@ -9,6 +9,16 @@ export default ({ children }) => {
       </Head>
       <Header />
       {children}
+      <style jsx>{`
+      @media (min-width: 500px) {
+        main {
+          max-width: 42rem;
+          margin: auto;
+          padding: 10px 0;
+        }
+      }
+    `}
+    </style>
     </main>
   )
 }

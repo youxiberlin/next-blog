@@ -1,13 +1,11 @@
+import styles from "../../css/code.module.css"
+
 const CodeSnippets = ({ codes }) => (
-  <pre>
-    <code className="html">{codes}</code>
-    <style jsx>{`
-      pre {
-        font-size: 14px;
-      }
-    `}
-    </style>
-  </pre>
+  <div className={styles.container}>
+    <pre>
+      <code>{codes}</code>
+    </pre>
+  </div>
 )
 
 export default CodeSnippets;

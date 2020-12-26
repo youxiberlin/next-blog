@@ -1,4 +1,4 @@
-const Timeline = () => {
+const Timeline = ({ codes }) => {
   return (
     <div>
       <div className="timeline">
@@ -16,9 +16,7 @@ const Timeline = () => {
         </div>
       </div>
         <pre>
-          <code className="html code">{`
-            <div>hello</div>
-            `}</code>
+          <code className="html code">{codes}</code>
         </pre>
       <style jsx>{`
         .code {
@@ -154,4 +152,4 @@ const Timeline = () => {
 }
 
 const TimelineBasic = Timeline;
-export default TimelineBasic
+export default TimelineBasic;

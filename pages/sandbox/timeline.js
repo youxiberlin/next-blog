@@ -6,6 +6,7 @@ import javascript from 'highlight.js/lib/languages/javascript';
 import html from 'highlight.js/lib/languages/htmlbars';
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('html', html);
+import codes from "../../components/codes/timeline-basic";
 
 const Timeline = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Timeline = () => {
 }, []);
   return (
     <Layout>
-      <TimelineBasic />
+      <TimelineBasic codes={codes} />
     </Layout>
   )
 };

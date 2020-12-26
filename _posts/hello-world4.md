@@ -1,8 +1,8 @@
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
+title: 'How I made this blog'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/hello-world/cover.jpg'
-date: '2020-12-24'
+date: '2020-03-16'
 author:
   name: Yuki Sato
   picture: '/assets/blog/authors/tim.jpeg'

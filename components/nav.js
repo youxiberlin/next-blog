@@ -10,6 +10,9 @@ export default () => (
           Sandbox
       </a>
       <a class="flex-1" target="_blank" href="https://twitter.com/yuki_sat">
+          Source
+      </a>
+      <a class="flex-1" target="_blank" href="https://twitter.com/yuki_sat">
           Follow Me
       </a>
     </nav>

@@ -1,8 +1,8 @@
 const TopPosts = ({ title, date }) => (
-  <section>
-    <h3>{title}</h3>
+  <div class="pl-2 py-3">
     <span>{date}</span>
-  </section>
+    <h3 class="text-xl">{title}</h3>
+  </div>
 )
 
 export default TopPosts;

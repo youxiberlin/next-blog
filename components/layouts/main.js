@@ -4,8 +4,8 @@ import colors from "../../css/colors";
 
 export default ({ children }) => {
   return (
-    <div class="bg-black">
-      <main class="bg-white container mx-auto">
+    <div class="bg-gray-100">
+      <main class="container mx-auto">
         <Head>
           <title>Yuki's blog</title>
         </Head>

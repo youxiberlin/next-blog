@@ -5,8 +5,8 @@ import { getAllPosts } from "../lib/api"
 const HomePage = ({ allPosts }) => {
   return (
     <Layout>
-      <div class="mt-6 mb-3 pl-2">
-        <div class="text-2xl">
+      <div className="mt-6 mb-3 pl-2">
+        <div className="text-2xl">
         Hello, my name is Yuki.<br/>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         </div>

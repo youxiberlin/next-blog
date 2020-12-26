@@ -1,5 +1,5 @@
 import Layout from "../../components/layouts/main";
-import TimelineBasic from "../../components/projects/timeline-basic"
+import TimelineBasic from "../../components/sandbox/timeline-basic"
 
 const Timeline = () => {
   return (

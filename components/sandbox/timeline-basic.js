@@ -13,6 +13,7 @@ const Timeline = () => {
             <p>Lorem ipsum..</p>
           </div>
         </div>
+
       <style jsx>{`
 /* The actual timeline (the vertical ruler) */
 .timeline {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layouts/main";
+import Code from "../../components/layouts/code-html";
 import TimelineBasic from "../../components/sandbox/timeline-basic"
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
@@ -10,11 +11,14 @@ import codes from "../../components/codes/timeline-basic";
 
 const Timeline = () => {
   useEffect(() => {
-    hljs.initHighlighting();
-}, []);
+      hljs.initHighlighting();
+  }, []);
+  const [tlBasicCode, setTlBasicCode] = useState(null)
   return (
     <Layout>
-      <TimelineBasic codes={codes} />
+      <TimelineBasic/>
+      <div onClick={() => setTlBasicCode(!tlBasicCode)}>show code</div>
+      {!tlBasicCode ? null : <Code codes={codes}/>}
     </Layout>
   )
 };

@@ -15,13 +15,7 @@ const Timeline = ({ codes }) => {
           </div>
         </div>
       </div>
-        <pre>
-          <code className="html code">{codes}</code>
-        </pre>
       <style jsx>{`
-        .code {
-          font-size: 14px;
-        }
         /* The actual timeline (the vertical ruler) */
         .timeline {
           position: relative;

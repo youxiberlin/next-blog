@@ -1,25 +1,12 @@
-const Logo = () => (
-  <span>
-  <svg height="20" width="20">
-    <circle cx="10" cy="10" r="8" stroke="black" strokeWidth="1" fill="red" />
-  </svg>
-    ykst
-    <style jsx>{`
-      span {
-        font-weight: bold;
-        font-size: 18px;
-        display: inline-flex;
-        align-items: center;
-        height: 30px;
-        line-height: 20px;
-        padding: 10px;
-      }
+import Image from 'next/image'
 
-      svg {
-        margin-right: 10px;
-      }
-    `}</style>
-  </span>	
+const Logo = () => (
+  <div class="flex justify-center">
+    <Image src="/assets/blog/yuki-pixel.png" alt="me" width="32" height="32"/>
+    <span class="text-gray-800 text-2xl">
+      Yuki Sato
+    </span>	
+  </div>
 );
 
 export default Logo;

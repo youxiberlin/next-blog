@@ -1,4 +1,4 @@
-import styles from "../../css/code.module.css"
+import styles from "./code.module.css"
 
 const CodeSnippets = ({ codes }) => (
   <div className={styles.container}>

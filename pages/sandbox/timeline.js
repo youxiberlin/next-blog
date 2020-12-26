@@ -17,6 +17,7 @@ const Timeline = () => {
     <Layout>
       <TimelineBasic/>
       <div onClick={() => setTlBasicCode(!tlBasicCode)}>show code</div>
+      {/* <Code codes={codes} className='html'/> */}
       {!tlBasicCode ? null : <Code codes={codes}/>}
     </Layout>
   )

@@ -4,7 +4,6 @@ import { getAllPosts } from "../lib/api"
 
 const HomePage = ({ allPosts }) => {
   const main = allPosts[0]
-  console.log('main', main)
   return (
     <Layout>
       <TopPosts

@@ -1,5 +1,4 @@
-import '../css/globals.css'
-// import 'highlight.js/styles/obsidian.css';
+import '../css/index.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

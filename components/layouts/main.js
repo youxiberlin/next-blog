@@ -14,9 +14,13 @@ export default ({ children }) => {
       <Header />
       {children}
       <style jsx>{`
+      main {
+        background-color: white;
+        font-size: 18px;
+      }
       @media (min-width: 500px) {
         main {
-          max-width: 42rem;
+          max-width: 48rem;
           margin: auto;
           padding: 10px 0;
         }

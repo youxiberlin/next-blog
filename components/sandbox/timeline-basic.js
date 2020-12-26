@@ -1,4 +1,4 @@
-const Timeline = ({ codes }) => {
+const Timeline = ({}) => {
   return (
     <div>
       <div className="timeline">

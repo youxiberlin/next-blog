@@ -3,17 +3,16 @@ import Layout from "../../components/layouts/main";
 import Code from "../../components/layouts/code-html";
 import TimelineBasic from "../../components/sandbox/timeline-basic"
 import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
 import html from 'highlight.js/lib/languages/htmlbars';
-hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('html', html);
 import codes from "../../components/codes/timeline-basic";
+import 'highlight.js/styles/obsidian.css';
 
 const Timeline = () => {
+  const [tlBasicCode, setTlBasicCode] = useState(null)
   useEffect(() => {
       hljs.initHighlighting();
   }, []);
-  const [tlBasicCode, setTlBasicCode] = useState(null)
   return (
     <Layout>
       <TimelineBasic/>

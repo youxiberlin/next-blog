@@ -1,18 +1,31 @@
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
+title: 'I developed this blog with Next.js and Markdown'
+excerpt: 'Hello World'
+coverImage: ''
 date: '2020-12-24'
 author:
   name: Yuki Sato
-  picture: '/assets/blog/authors/tim.jpeg'
+  picture: ''
 ogImage:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+I developed this blog-oriented static site, using Next.js.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+There are some reasons why I decided to develop this site.
 
-## Lorem Ipsum
+I think that the biggest motivation is actually that I just wanted to develop this to get better understanding of Next.js. I already had experience with Next.js when I collaborated with the other developers, but as I had little experience developing everything from scratch, I thought building my own blog would help me better understand how Next.js works. 
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Also, there are some other libraries that I wanted to try out with Next.js such as **tailwindcss** and **remark**. I actually enjoyed using them on this project.
+
+My former blog that I devloped almost 3 years ago was developed with Jekyll and published on a github page. That was about when I started to learn to code from zero, and the project really helped me have more and better experience with how web development works.
+
+But some time passed by since then, and I started feeling that the Jekyll blog doesn't much meet my aim anymore, as I wanted to used the other techstacks.
+
+So, this time I developed this and it was a rewarding experience.
+
+Basically, I refered this <a class="underline" href="https://github.com/vercel/next.js/tree/canary/examples/blog-starter" target="_blank">blog example</a>.
+
+If you are interested in the source code, please check out <a class="underline" href="https://github.com/youxiberlin/next-blog" target="_blank">here</a>.
+
+Happy coding! 🚀
+

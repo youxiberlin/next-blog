@@ -1,17 +1,18 @@
 import Layout from "../components/layouts/main"
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const contents = [
   {
     title: "Blog",
     github: "https://github.com/youxiberlin/next-blog",
-    techstack: ["Next.js", "Tailwindcss"],
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"
+    techstack: ["Next.js", "Tailwindcss", "remark", "Vercel"],
+    description: "I developed my former blog with Jekyll and published on a gihub page. I wanted to replace it with the other modern techstacks that I am more familiar with. So, I developed this blog-oriented static profile site, using Next.js. Deployed with vercel."
   },
   {
-    title: "Tibber Projects",
+    title: "Tibber Project",
     github: "https://github.com/youxiberlin/Tibber-Project",
-    techstack: ["Next.js"],
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"
+    techstack: ["Next.js", "Tibber API"],
+    description: "The aim of this on-going small side project is that I wanted to develop a custom application that can leverage the power of Tibber API. Tibber is a digital electricity supplier that offers technological solutions to minimize their customers' consumption and costs."
   },
 ]
 
@@ -22,14 +23,15 @@ const Page = ({}) => {
         <div className="mb-8 text-6xl font-bold">Projects</div>
         {contents.map(item => (
           <>
-            <div className="mt-8 text-4xl">
+            <div className="mt-8 text-3xl">
               <a className="hover:bg-yellow-100" target="_blank" href={item.github}>
                 {item.title}
+                <i className="fab fa-github text-xl ml-3"></i>
               </a>
             </div>
             <div className="my-3">{item.description}</div>
             <div className="flex">
-              {item.techstack.map(el => <div className="bg-black text-white mr-2 px-2">{el}</div>)}
+              {item.techstack.map(el => <div className="bg-purple-500 text-white mr-2 px-2">{el}</div>)}
             </div>
           </>
         ))}

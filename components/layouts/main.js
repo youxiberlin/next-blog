@@ -4,14 +4,14 @@ import colors from "../../css/colors";
 
 export default ({ children }) => {
   return (
-    <div className="">
-      <main className="container mx-auto">
+    <>
+      <main className="max-w-4xl container mx-auto bg-gray-100">
         <Head>
           <title>Yuki's blog</title>
         </Head>
         <Header />
         {children}
       </main>
-    </div>
+    </>
   )
 }

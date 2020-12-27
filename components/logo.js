@@ -1,12 +1,15 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
-const Logo = () => (
-  <div className="flex justify-center">
-    <Image src="/assets/blog/yuki-pixel.png" alt="me" width="32" height="32"/>
-    <span className="text-gray-800 text-2xl font-bold hover:bg-purple-200 cursor-pointe">
-      Yuki Sato
-    </span>	
-  </div>
-);
+const Logo = () => {
+  const router = useRouter();
+  return (
+    <div onClick={() => router.push('/')} className="flex">
+      <Image className="cursor-pointer" src="/assets/blog/yuki-pixel.png" alt="me" width="32" height="32"/>
+      <span className="text-gray-800 text-2xl font-bold hover:bg-purple-200 cursor-pointer">
+        Yuki Sato
+      </span>	
+    </div>
+)}
 
 export default Logo;

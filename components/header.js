@@ -1,9 +1,11 @@
 import Logo from "./Logo";
 import Nav from "./nav";
 
-export default () => (
+const Header = () => (
   <header className="pt-4 flex">
     <Logo />
     <Nav />
   </header>
 )
+
+export default Header;

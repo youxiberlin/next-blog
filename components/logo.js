@@ -5,7 +5,7 @@ const Logo = () => {
   const router = useRouter();
   return (
     <div onClick={() => router.push('/')} className="flex">
-      <Image className="cursor-pointer" src="/assets/blog/yuki-pixel.png" alt="me" width="32" height="32"/>
+      <Image className="cursor-pointer" src="/assets/yuki-pixel.png" alt="me" width="32" height="32"/>
       <span className="text-gray-800 text-2xl font-bold hover:bg-purple-200 cursor-pointer">
         Yuki Sato
       </span>	

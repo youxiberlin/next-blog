@@ -2,7 +2,8 @@ import Link from 'next/link'
 
 const TopPosts = ({ posts }) => {
   return (
-    <div className="mt-12">
+    <div className="mt-8">
+      <div className="pl-2 py-2 text-gray-800 sm:text-3xl text-4xl font-bold">Journal</div>
       {posts.map(post => (
         <div className="pl-2 py-2" key={post.slug}>
           <span className="text-sm text-gray-600">{post.date}</span>

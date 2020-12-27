@@ -2,6 +2,7 @@ import { useState } from "react"
 import Layout from "../components/layouts/main"
 import TopPosts from "../components/layouts/top-posts"
 import TopIntro from "../components/top-intro"
+import TopProjects from "../components/top-projects"
 import { getAllPosts } from "../lib/api"
 
 const HomePage = ({ allPosts }) => {
@@ -10,6 +11,7 @@ const HomePage = ({ allPosts }) => {
   return (
     <Layout>
       <TopIntro />
+      <TopProjects />
       <TopPosts
         posts={!morePosts ? topPosts : allPosts}
       />

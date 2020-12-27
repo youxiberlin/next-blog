@@ -1,8 +1,11 @@
+import { useState } from "react"
 import Layout from "../components/layouts/main"
 import TopPosts from "../components/layouts/top-posts"
 import { getAllPosts } from "../lib/api"
 
 const HomePage = ({ allPosts }) => {
+  const [morePosts, setMorePosts] = useState(false)
+  const topPosts = allPosts.length <=10 ? allPosts : allPosts.slice(0, 10)
   return (
     <Layout>
       <div className="mt-6 mb-3 pl-2">
@@ -12,8 +15,13 @@ const HomePage = ({ allPosts }) => {
         </div>
       </div>
       <TopPosts
-        posts={allPosts}
+        posts={!morePosts ? topPosts : allPosts}
       />
+      <div
+        onClick={() => setMorePosts(!morePosts)}
+        className={allPosts.length > topPosts.length && !morePosts ? 'block' : 'hidden'}>
+        show more
+      </div>
     </Layout>
   )
 }

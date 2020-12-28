@@ -12,10 +12,7 @@ export default function Nav() {
             <div className="ml-3 cursor-pointer hover:bg-yellow-100" onClick={() => router.push('/about')}>
                 About
             </div>
-            <a className="ml-3 hover:bg-yellow-100" target="_blank" href="https://github.com/youxiberlin/next-blog">
-                Source
-            </a>
-            <a className="mx-2 hover:bg-yellow-100" target="_blank" href="https://github.com/youxiberlin">
+            <a className="mx-2 hover:bg-yellow-100" target="_blank" href="https://github.com/youxiberlin/next-blog">
                 <i className="fab fa-github"></i>
             </a>
             </nav>

@@ -1,15 +1,19 @@
 import Head from "next/head";
 import Header from "../header";
+import Footer  from "../footer";
 
 const Main = ({ children }) => {
   return (
     <>
-      <main className="max-w-3xl mb-10 container mx-auto">
+      <main className="max-w-3xl mb-10 container mx-auto h-screen flex flex-col">
         <Head>
           <title>Yuki's blog</title>
         </Head>
         <Header />
-        {children}
+        <div className="flex-grow">
+          {children}
+        </div>
+        <Footer />
       </main>
     </>
   )

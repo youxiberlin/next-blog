@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Head from "next/head"
-import { getDevlogBySlug, getAllDevlogs } from '../../lib/api'
+import { getDevlogBySlug, getAllDevlog } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 import Layout from "../../components/layouts/main"
 import PostHeader from "../../components/layouts/post-header"
@@ -54,7 +54,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllDevlogs(['slug'])
+  const posts = getAllDevlog(['slug'])
   return {
     paths: posts.map((post) => {
       return {

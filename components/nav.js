@@ -15,9 +15,6 @@ export default function Nav() {
             <a className="mx-2 hover:bg-yellow-100" target="_blank" href="https://github.com/youxiberlin">
                 <i className="fab fa-github"></i>
             </a>
-            <a className="mr-2 hover:bg-yellow-100" target="_blank" href="https://twitter.com/yuki_sat">
-                <i className="fab fa-twitter"></i>
-            </a>
             </nav>
         </>
 )}

@@ -1,5 +1,5 @@
 ---
-title: 'I developed this blog with Next.js and Markdown'
+title: 'Dev update'
 excerpt: 'Hello World'
 date: '2020-12-28'
 author: ''

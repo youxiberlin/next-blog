@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
+
 export default function Intro() {
+  const router = useRouter()
   return (
     <div className="mt-16 pl-2">
         <div className="mt-6 sm:text-2xl text-3xl font-bold mb-3 text-gray-800 tracking-wide">Hello, Hallo, こんにちは！</div>
@@ -14,6 +17,9 @@ export default function Intro() {
         </div>
         </div>
         <div className="mt-3 text-xl leading-relaxed text-gray-700">Curious about my work? Check out a more detailed profile&ensp;
-        <a className="mr-2 hover:bg-yellow-100 underline" target="_blank" href="https://www.linkedin.com/in/yukisato/">here</a>.</div>
+        <span
+            className="mr-2 hover:bg-yellow-100 underline"
+            onClick={() => router.push('/about')}>
+                here</span>.</div>
     </div>
 )}

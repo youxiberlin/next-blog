@@ -1,5 +1,5 @@
-export default function PostHeader({ title, coverImage, date, author, slug }) {
-  const url = `https://blog.youxiberlin.vercel.app/posts/${slug}`
+export default function PostHeader({ title, date, dir, slug }) {
+  const url = `https://blog.youxiberlin.vercel.app/${dir}/${slug}`
   return (
     <>
     <h1 className="text-gray-800 text-4xl font-bold text-center">

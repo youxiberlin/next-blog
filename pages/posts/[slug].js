@@ -24,7 +24,7 @@ export default function Post({ post, content, preview }) {
               {post.title}
             </title>
           </Head>
-          <PostHeader {...post}/>
+          <PostHeader {...post} dir="posts"/>
           <PostBody content={content}/>
         </article>
         </>

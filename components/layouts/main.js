@@ -5,7 +5,7 @@ import Footer  from "../footer";
 const Main = ({ children }) => {
   return (
     <>
-      <main className="max-w-3xl mb-10 container mx-auto h-screen flex flex-col">
+      <main className="max-w-3xl mb-10 container mx-auto flex flex-col">
         <Head>
           <title>Yuki's blog</title>
         </Head>
@@ -13,7 +13,7 @@ const Main = ({ children }) => {
         <div className="flex-grow">
           {children}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   )

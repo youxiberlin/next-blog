@@ -1,5 +1,4 @@
 import Layout from "../components/layouts/main"
-import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const contents = [
   {

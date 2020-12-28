@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "../header";
-import colors from "../../css/colors";
 
 export default ({ children }) => {
   return (

@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import '@fortawesome/fontawesome-free/css/all.min.css'
 
 export default function Nav() {
     const router = useRouter()

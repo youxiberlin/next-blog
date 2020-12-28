@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <div className="my-16 pl-2">
+    <div className="mt-16 pl-2">
         <div className="mt-6 sm:text-2xl text-3xl font-bold mb-3 text-gray-800 tracking-wide">Hello, Hallo, こんにちは！</div>
         <div className="mt-6 sm:text-2xl text-2xl font-bold mb-3 text-gray-800 tracking-wide">I am Yuki, a full-stack developer.</div>
         <div className="mt-6 text-xl leading-relaxed text-gray-700 tracking-wide">I've been based in Berlin since 2012. My hometown is Yokohama, Japan.</div>

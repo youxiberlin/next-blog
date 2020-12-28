@@ -19,7 +19,7 @@ const contents = [
 const Page = ({}) => {
   return (
     <Layout>
-      <div className="mt-12">
+      <div className="sm:px-4 px-3 mt-12">
         <div className="mb-8 text-6xl font-bold">Projects</div>
         {contents.map(item => (
           <>

@@ -25,9 +25,9 @@ export default function Post({ post, content, preview }) {
             </title>
             <meta name="twitter:card" content="summary"></meta>
             <meta name="twitter:site" content="Yuki Sato" />
-            <meta name="twitter:title" content="title" />
-            <meta name="twitter:description" content="description" />
-            <meta name="twitter:image" content="https://unsplash.com/photos/5sGjkpNDmLI" />
+            <meta name="twitter:title" content={post.title} />
+            <meta name="twitter:description" content={post.title} />
+            <meta name="twitter:image" content="https://blog.youxiberlin.vercel.app/assets/twitter-card-img.jpg" />
           </Head>
           <PostHeader {...post} dir="posts"/>
           <PostBody content={content}/>

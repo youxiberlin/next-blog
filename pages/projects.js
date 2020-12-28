@@ -19,18 +19,18 @@ const Page = ({}) => {
   return (
     <Layout>
       <div className="sm:px-4 px-3 mt-12">
-        <div className="mb-8 text-6xl font-bold">Projects</div>
+        <div className="mb-8 text-5xl font-bold text-gray-800">Projects</div>
         {contents.map(item => (
           <>
             <div className="mt-8 text-3xl">
-              <a className="hover:bg-yellow-100" target="_blank" href={item.github}>
+              <a className="hover:bg-yellow-100 text-gray-800" target="_blank" href={item.github}>
                 {item.title}
                 <i className="fab fa-github text-xl ml-3"></i>
               </a>
             </div>
-            <div className="my-3">{item.description}</div>
+            <div className="my-3 text-gray-800">{item.description}</div>
             <div className="flex">
-              {item.techstack.map(el => <div className="bg-purple-500 text-white mr-2 px-2">{el}</div>)}
+              {item.techstack.map(el => <div className="border border-gray-200 bg-gray-50 text-gray-600 mr-2 px-2">{el}</div>)}
             </div>
           </>
         ))}

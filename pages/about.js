@@ -30,7 +30,7 @@ const Page = ({}) => {
   return (
     <Layout>
       <div className="sm:px-4 px-3 mt-12">
-        <div className="text-gray-800 mb-8 text-4xl font-bold">About</div>
+        <div className="text-gray-800 mb-8 text-5xl font-bold">About</div>
         <div className="text-gray-800 mb-4 text-2xl font-bold">Work Experiences</div>
         {contents.map(item => (
           <div className="mb-6 text-gray-800">
@@ -41,8 +41,8 @@ const Page = ({}) => {
             </div>
             <div className="text-xl font-bold my-2">{item.job_title}</div>
             <div className="flex items-end flex-wrap">{!item.tech ?
-            null : 
-            item.tech.map(el => <div className="bg-gray-400 text-white px-3 mr-2 text-sm mt-1">{el}</div>)}
+            null :
+            item.tech.map(el => <div className="border border-gray-200 bg-gray-50 text-gray-600 px-3 mr-2 text-sm mt-1">{el}</div>)}
             {!item.tech ? null : <span className="text-xs">and more</span>}
             </div>
           </div>

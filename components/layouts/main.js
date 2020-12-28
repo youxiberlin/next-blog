@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../header";
 
-export default ({ children }) => {
+const Main = ({ children }) => {
   return (
     <>
       <main className="max-w-3xl mb-10 container mx-auto">
@@ -14,3 +14,5 @@ export default ({ children }) => {
     </>
   )
 }
+
+export default Main;

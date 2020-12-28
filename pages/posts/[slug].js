@@ -23,6 +23,11 @@ export default function Post({ post, content, preview }) {
             <title>
               {post.title}
             </title>
+            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:site" content="Yuki Sato" />
+            <meta name="twitter:title" content="title" />
+            <meta name="twitter:description" content="description" />
+            <meta name="twitter:image" content="https://unsplash.com/photos/5sGjkpNDmLI" />
           </Head>
           <PostHeader {...post} dir="posts"/>
           <PostBody content={content}/>

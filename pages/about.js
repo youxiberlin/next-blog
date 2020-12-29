@@ -17,7 +17,7 @@ const Page = ({}) => {
             <div className="text-lg my-2">{item.job_title}</div>
             <div className="flex items-end flex-wrap">{!item.tech ?
             null :
-            item.tech.map(el => <div className="border border-gray-200 bg-gray-50 text-gray-600 px-3 mr-2 text-sm mt-1">{el}</div>)}
+            item.tech.map(el => <div className="sm-tag-gray">{el}</div>)}
             {!item.tech ? null : <span className="text-xs">and more</span>}
             </div>
           </div>
@@ -26,8 +26,8 @@ const Page = ({}) => {
         <div className="mb-8">2000-2004 Hitotsubashi University, BA Social Sciences</div>
         <div className="text-gray-800 mt-8 mb-4 text-2xl font-bold">Skills</div>
         <div className="flex items-end flex-wrap">
-          {skill.general.map(item => <div className="border border-blue-200 bg-blue-50 text-blue-600 px-3 mr-2 text-sm mt-1">{item}</div>)}
-          {skill.lng.map(item => <div className="border border-green-200 bg-green-50 text-green-600 px-3 mr-2 text-sm mt-1">{item}</div>)}
+          {skill.general.map(item => <div className="sm-tag-blue">{item}</div>)}
+          {skill.lng.map(item => <div className="sm-tag-green">{item}</div>)}
         </div>
         <div className="mt-8">
           More on <a className="hover:bg-yellow-100 underline" target="_blank" href="https://www.linkedin.com/in/yukisato/">LinkedIn</a>

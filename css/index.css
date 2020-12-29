@@ -13,3 +13,20 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer components {
+  .sm-tag-green {
+    @apply text-sm border border-green-200 bg-green-50 text-green-600 mr-2 px-2 mb-1;
+  }
+  .sm-tag-blue {
+    @apply text-sm border border-blue-200 bg-blue-50 text-blue-600 mr-2 px-2 mb-1;
+  }
+  .sm-tag-yellow {
+    @apply text-sm border border-yellow-200 bg-yellow-50 text-yellow-600 mr-2 px-2 mb-1;
+  }
+  .sm-tag-gray {
+    @apply border border-gray-200 bg-gray-50 text-gray-600 px-3 mr-2 text-sm mt-1
+  }
+  .tag-gray {
+    @apply border border-gray-200 bg-gray-50 text-gray-700 mx-1 px-2 py-1 text-base mt-1
+  }
+}

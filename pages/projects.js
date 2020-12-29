@@ -16,9 +16,9 @@ const Page = ({}) => {
             </div>
             <div className="my-3 text-gray-800">{item.description}</div>
             <div className="flex flex-wrap">
-              {item.techstack.map(el => <div className="text-sm border border-green-200 bg-green-50 text-green-600 mr-2 px-2 mb-1">{el}</div>)}
-              {item.skill.map(el => <div className="text-sm border border-blue-200 bg-blue-50 text-blue-600 mr-2 px-2 mb-1">{el}</div>)}
-              {item.area.map(el => <div className="text-sm border border-yellow-200 bg-yellow-50 text-yellow-600 mr-2 px-2 mb-1">{el}</div>)}
+              {item.techstack.map(el => <div className="sm-tag-green">{el}</div>)}
+              {item.skill.map(el => <div className="sm-tag-blue">{el}</div>)}
+              {item.area.map(el => <div className="sm-tag-yellow">{el}</div>)}
             </div>
           </>
         ))}

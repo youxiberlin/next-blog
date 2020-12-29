@@ -10,10 +10,10 @@ export default function Intro() {
         <div className="mt-3 text-xl leading-relaxed text-gray-700">How the internet and IT changes society and makes an impact on the lifestyle has been my interest since I was a teenager.</div>
         <div className="mt-3 text-xl leading-relaxed text-gray-700">The tech stacks that I use a lot these days are:
         <div className="flex flex-wrap">
-            <div className="border border-gray-200 bg-gray-50 text-gray-700 mx-1 px-2 py-1 text-base mt-1">Node.js</div>
-            <div className="border border-gray-200 bg-gray-50 text-gray-700 mx-1 px-2 py-1 text-base mt-1">Next.js</div>
-            <div className="border border-gray-200 bg-gray-50 text-gray-700 mx-1 px-2 py-1 text-base mt-1">Mongo DB</div>
-            <div className="border border-gray-200 bg-gray-50 text-gray-700 mx-1 px-2 py-1 text-base mt-1">Firestore</div>
+            <div className="tag-gray">Node.js</div>
+            <div className="tag-gray">Next.js</div>
+            <div className="tag-gray">Mongo DB</div>
+            <div className="tag-gray">Firestore</div>
         </div>
         </div>
         <div className="mt-3 text-xl leading-relaxed text-gray-700">Curious about my work? Check out a more detailed profile&ensp;

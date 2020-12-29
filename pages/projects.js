@@ -5,11 +5,15 @@ const contents = [
     title: "Blog",
     github: "https://github.com/youxiberlin/next-blog",
     techstack: ["Next.js", "Tailwindcss", "remark", "Vercel"],
+    skill: ["Prototyping"],
+    area: ["Frontend"],
     description: "I developed my former blog with Jekyll and published on a gihub page. I wanted to replace it with the other modern techstacks that I am more familiar with. So, I developed this blog-oriented static profile site, using Next.js. Deployed with vercel."
   },
   {
     title: "Tibber Project",
     github: "https://github.com/youxiberlin/Tibber-Project",
+    skill: ["Prototyping"],
+    area: ["Frontend"],
     techstack: ["Next.js", "Tibber API"],
     description: "The aim of this on-going small side project is that I wanted to develop a custom application that can leverage the power of Tibber API. Tibber is a digital electricity supplier that offers technological solutions to minimize their customers' consumption and costs."
   },
@@ -29,8 +33,10 @@ const Page = ({}) => {
               </a>
             </div>
             <div className="my-3 text-gray-800">{item.description}</div>
-            <div className="flex">
-              {item.techstack.map(el => <div className="border border-gray-200 bg-gray-50 text-gray-600 mr-2 px-2">{el}</div>)}
+            <div className="flex flex-wrap">
+              {item.techstack.map(el => <div className="text-sm border border-green-200 bg-green-50 text-green-600 mr-2 px-2 mb-1">{el}</div>)}
+              {item.skill.map(el => <div className="text-sm border border-blue-200 bg-blue-50 text-blue-600 mr-2 px-2 mb-1">{el}</div>)}
+              {item.area.map(el => <div className="text-sm border border-yellow-200 bg-yellow-50 text-yellow-600 mr-2 px-2 mb-1">{el}</div>)}
             </div>
           </>
         ))}
